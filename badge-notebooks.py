@@ -34,17 +34,15 @@ if not os.path.isdir(dirname):
 dirname = dirname.lstrip('.')  # ./somedir/ ->  /somedir/
 dirname = dirname.lstrip('/')  #  /somedir/  ->  somedir/
 dirname = dirname.rstrip('/')  #   somedir/  ->  somedir
-
 fnames = glob.glob(os.path.join(dirname,'*.ipynb'))
 
 for fname in fnames:
-    dirname = os.path.basename(os.path.dirname(os.path.abspath(fname)))
 
     with open(fname, "rt", encoding="utf-8") as inf:
         d = json.load(inf)
 
     if not remove:
-        s = fr'<a href="https://colab.research.google.com/github/{githuborgrepo}/blob/master/{dirname}/{fname}" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>'
+        s = fr'<a href="https://colab.research.google.com/github/{githuborgrepo}/blob/master/{fname}" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>'
         #s = fr'[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lukeolson/imperial-multigrid/blob/master/{dirname}/{fname})'
         newcell = {}
         newcell['cell_type'] = "markdown"
