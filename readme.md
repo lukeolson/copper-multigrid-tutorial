@@ -1,11 +1,12 @@
-Part of the tutorial series at the 20th Copper Mountain Conference On Multigrid Methods (Virtual)
+Part of the tutorial series at the **20th Copper Mountain Conference On Multigrid Methods** (Virtual)
 
-https://grandmaster.colorado.edu/copper/2021/
+**Main Page** https://grandmaster.colorado.edu/copper/2021/
 
-March 23, 2021
-Luke Olson
+**When** 1600 UTC, March 23, 2021
 
+**Who** Luke Olson
 
+### Links to notebooks in Google Colab
 - [01-model-problem.ipynb]( https://colab.research.google.com/github/lukeolson/copper-multigrid-tutorial/blob/master/multigrid/01-model-problem.ipynb)
 - [02-relaxation-Jacobi.ipynb]( https://colab.research.google.com/github/lukeolson/copper-multigrid-tutorial/blob/master/multigrid/02-relaxation-Jacobi.ipynb)
 - [03-smooth-error.ipynb]( https://colab.research.google.com/github/lukeolson/copper-multigrid-tutorial/blob/master/multigrid/03-smooth-error.ipynb)
